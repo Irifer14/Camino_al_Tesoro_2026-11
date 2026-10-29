@@ -59,18 +59,18 @@
           <div style="font-family:'Montserrat';font-weight:900;font-size:80px;line-height:.92;letter-spacing:1px" class="gold">CAMINO AL TESORO</div>
         </div>
         <div style="display:inline-block;margin-top:12px;border:2px solid rgba(230,184,75,.55);border-radius:999px;padding:9px 24px;font-family:'Montserrat';font-weight:700;font-size:19px;background:rgba(20,14,6,.5)">
-          Cada 50 puntos jugando con la tarjeta conectada = 1 chance
+          Cada 50 puntos = 1 chance &middot; canjeala para participar del sorteo
         </div>
-        <div style="margin-top:8px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 29/10 10:30 hs</div>
+        <div style="margin-top:8px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 29/10 10:39 hs</div>
       </div>
       <div style="display:flex;gap:14px;align-items:stretch;padding-bottom:4px">
         <div class="chip" style="min-width:300px">
-          <div style="font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:2px;color:#E8C877">PREMIO &middot; 1 GANADOR</div>
+          <div style="font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:2px;color:#E8C877">PREMIO DEL SORTEO</div>
           <div style="font-family:'Montserrat';font-weight:900;font-size:40px;line-height:1;margin-top:2px" class="gold">$800.000</div>
           <div style="font-weight:600;font-size:12px;letter-spacing:1px;color:#C7A253;margin-top:2px">EN CRÉDITOS PROMOCIONALES</div>
         </div>
         <div class="chip" style="min-width:250px;display:flex;flex-direction:column;justify-content:center">
-          <div style="font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:2px;color:#E8C877">FASE 1 &middot; FINALIZA</div>
+          <div style="font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:2px;color:#E8C877">FASE 1 &middot; CANJE HASTA</div>
           <div style="font-family:'Montserrat';font-weight:900;font-size:30px;margin-top:2px;color:#fff">12/11 &middot; 20:00 HS</div>
         </div>
       </div>
@@ -97,30 +97,10 @@ fit();addEventListener('resize',fit);
 (function(){var t0=Date.now();setInterval(function(){if(Date.now()-t0>=900000){location.replace(location.pathname+'?r='+Date.now());}},30000);})();
 var data=[];
 var fmt=function(x){return x.toLocaleString('es-AR');};
-function rowH(o){return '<div class="row'+(o.r===1?' top':'')+'"><div><span class="rk">'+o.r+'</span></div><div class="nm">'+o.n+'</div><div class="dni">'+o.d+'</div><div class="gn">'+fmt(o.g)+'</div><div class="cj">'+fmt(o.c)+'</div></div>';}
+function rowH(o){return '<div class="row"><div><span class="rk">'+o.r+'</span></div><div class="nm">'+o.n+'</div><div class="dni">'+o.d+'</div><div class="gn">'+fmt(o.g)+'</div><div class="cj">'+fmt(o.c)+'</div></div>';}
 document.getElementById('c1').innerHTML=data.slice(0,15).map(rowH).join('');
 document.getElementById('c2').innerHTML=data.slice(15,30).map(rowH).join('');
 if(!data.length)document.getElementById('espera').style.display='block';
-/* Placa GANADOR: solo al cerrar la fase; 1 ganador */
-(function(){
-  var FINAL=false;
-  if(!FINAL||!data.length)return;
-  var w=data[0];
-  var ov=document.createElement('div');
-  ov.style.cssText='position:absolute;inset:0;background:rgba(8,6,2,.88);display:flex;align-items:center;justify-content:center;z-index:60';
-  ov.innerHTML='<div style="width:1100px;background:radial-gradient(120% 130% at 50% -6%,#2c2010,#120c05 68%);border:3px solid #E8C877;border-radius:30px;padding:48px 60px;box-shadow:0 26px 90px rgba(0,0,0,.75);text-align:center">'
-    +'<div style="font-family:Montserrat;font-weight:900;font-size:24px;letter-spacing:9px;color:#E8C877">GANADOR &middot; FASE 1</div>'
-    +'<div style="font-family:Montserrat;font-weight:900;font-size:62px;line-height:1.05" class="gold">CAMINO AL TESORO</div>'
-    +'<div style="font-size:18px;color:#C7A253;margin-top:6px">Sala Varela &middot; Resultado final</div>'
-    +'<div style="margin:34px auto 0;width:760px;background:linear-gradient(160deg,rgba(255,240,200,.14),rgba(255,240,200,.03));border:2px solid rgba(230,184,75,.95);border-radius:22px;padding:34px 26px;box-shadow:0 16px 44px rgba(247,215,116,.22)">'
-    +'<div style="font-family:Montserrat;font-weight:900;font-size:50px;color:#fff;line-height:1.1">'+w.n+'</div>'
-    +'<div style="margin-top:8px;font-weight:600;font-size:22px;color:#FFD98A">DNI &hellip;'+w.d+'</div>'
-    +'<div style="margin-top:14px;font-family:Montserrat;font-weight:900;font-size:34px" class="gold">'+fmt(w.g)+' chances</div>'
-    +'<div style="margin-top:16px;font-family:Montserrat;font-weight:900;font-size:40px;color:#FFE9B8">$800.000</div>'
-    +'<div style="font-weight:600;font-size:13px;letter-spacing:2px;color:#C7A253">EN CRÉDITOS PROMOCIONALES</div>'
-    +'</div></div>';
-  document.getElementById('mk').appendChild(ov);
-})();
 </script>
 </body>
 </html>
