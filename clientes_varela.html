@@ -61,7 +61,7 @@
         <div style="display:inline-block;margin-top:12px;border:2px solid rgba(230,184,75,.55);border-radius:999px;padding:9px 24px;font-family:'Montserrat';font-weight:700;font-size:19px;background:rgba(20,14,6,.5)">
           Cada 50 puntos = 1 chance &middot; canjeala para participar del sorteo
         </div>
-        <div style="margin-top:8px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 01/11 20:30 hs</div>
+        <div style="margin-top:8px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 01/11 20:45 hs</div>
       </div>
       <div style="display:flex;gap:14px;align-items:stretch;padding-bottom:4px">
         <div class="chip" style="min-width:300px">
@@ -95,7 +95,7 @@
 function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('mk').style.transform='scale('+s+')';}
 fit();addEventListener('resize',fit);
 (function(){var t0=Date.now();setInterval(function(){if(Date.now()-t0>=900000){location.replace(location.pathname+'?r='+Date.now());}},30000);})();
-var data=[{"r":1,"n":"GERARDO","d":"557","p":6397,"g":127,"c":0},{"r":2,"n":"CARLOS","d":"412","p":6386,"g":127,"c":0},{"r":3,"n":"PATRICIA","d":"611","p":5773,"g":115,"c":0},{"r":4,"n":"JUAN LUIS","d":"917","p":5072,"g":101,"c":0},{"r":5,"n":"ZULEMA","d":"269","p":4164,"g":83,"c":0},{"r":6,"n":"JESUS LUIS","d":"507","p":621,"g":12,"c":0},{"r":7,"n":"ANASTACIO","d":"002","p":350,"g":7,"c":0},{"r":8,"n":"OSCAR","d":"406","p":349,"g":6,"c":0},{"r":9,"n":"ASAKO","d":"168","p":72,"g":1,"c":0}];
+var data=[{"r":1,"n":"GERARDO","d":"557","p":6397,"g":127,"c":0},{"r":2,"n":"CARLOS","d":"412","p":6386,"g":127,"c":0},{"r":3,"n":"PATRICIA","d":"611","p":5773,"g":115,"c":0},{"r":4,"n":"JUAN LUIS","d":"917","p":5431,"g":108,"c":0},{"r":5,"n":"ZULEMA","d":"269","p":4164,"g":83,"c":0},{"r":6,"n":"JESUS LUIS","d":"507","p":621,"g":12,"c":0},{"r":7,"n":"ANASTACIO","d":"002","p":350,"g":7,"c":0},{"r":8,"n":"OSCAR","d":"406","p":349,"g":6,"c":0},{"r":9,"n":"ASAKO","d":"168","p":72,"g":1,"c":0}];
 var fmt=function(x){return x.toLocaleString('es-AR');};
 function rowH(o){return '<div class="row"><div><span class="rk">'+o.r+'</span></div><div class="nm">'+o.n+'</div><div class="dni">'+o.d+'</div><div class="gn">'+fmt(o.g)+'</div><div class="cj">'+fmt(o.c)+'</div></div>';}
 document.getElementById('c1').innerHTML=data.slice(0,15).map(rowH).join('');
