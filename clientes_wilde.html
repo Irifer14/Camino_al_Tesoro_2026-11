@@ -61,7 +61,7 @@
         <div style="display:inline-block;margin-top:12px;border:2px solid rgba(230,184,75,.55);border-radius:999px;padding:9px 24px;font-family:'Montserrat';font-weight:700;font-size:19px;background:rgba(20,14,6,.5)">
           Cada 50 puntos = 1 chance &middot; canjeala para participar del sorteo
         </div>
-        <div style="margin-top:8px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 01/11 17:45 hs</div>
+        <div style="margin-top:8px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 01/11 18:00 hs</div>
       </div>
       <div style="display:flex;gap:14px;align-items:stretch;padding-bottom:4px">
         <div class="chip" style="min-width:300px">
@@ -95,7 +95,7 @@
 function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('mk').style.transform='scale('+s+')';}
 fit();addEventListener('resize',fit);
 (function(){var t0=Date.now();setInterval(function(){if(Date.now()-t0>=900000){location.replace(location.pathname+'?r='+Date.now());}},30000);})();
-var data=[{"r":1,"n":"ANDREA","d":"300","p":7709,"g":154,"c":0},{"r":2,"n":"VIVIANA","d":"969","p":5186,"g":103,"c":0},{"r":3,"n":"ADRIANA","d":"957","p":3852,"g":77,"c":0},{"r":4,"n":"GUSTAVO","d":"118","p":2713,"g":54,"c":0},{"r":5,"n":"GRACIELA","d":"247","p":1808,"g":36,"c":0},{"r":6,"n":"ALBERTO","d":"983","p":1451,"g":29,"c":0},{"r":7,"n":"GABRIEL OMAR","d":"232","p":1408,"g":28,"c":0},{"r":8,"n":"ELDA DOLORES","d":"742","p":819,"g":16,"c":0},{"r":9,"n":"RICARDO OMAR","d":"054","p":448,"g":8,"c":0},{"r":10,"n":"FLORENCIA LUCILA","d":"905","p":356,"g":7,"c":0},{"r":11,"n":"MANUEL RICARDO","d":"172","p":60,"g":1,"c":0},{"r":12,"n":"EMILIO","d":"104","p":18,"g":0,"c":0}];
+var data=[{"r":1,"n":"ANDREA","d":"300","p":7709,"g":154,"c":0},{"r":2,"n":"VIVIANA","d":"969","p":5186,"g":103,"c":0},{"r":3,"n":"ALBERTO","d":"983","p":4708,"g":94,"c":0},{"r":4,"n":"ADRIANA","d":"957","p":3852,"g":77,"c":0},{"r":5,"n":"GUSTAVO","d":"118","p":2713,"g":54,"c":0},{"r":6,"n":"GRACIELA","d":"247","p":1808,"g":36,"c":0},{"r":7,"n":"GABRIEL OMAR","d":"232","p":1408,"g":28,"c":0},{"r":8,"n":"FLORENCIA LUCILA","d":"905","p":935,"g":18,"c":0},{"r":9,"n":"ELDA DOLORES","d":"742","p":819,"g":16,"c":0},{"r":10,"n":"RICARDO OMAR","d":"054","p":448,"g":8,"c":0},{"r":11,"n":"MANUEL RICARDO","d":"172","p":60,"g":1,"c":0},{"r":12,"n":"EMILIO","d":"104","p":18,"g":0,"c":0}];
 var fmt=function(x){return x.toLocaleString('es-AR');};
 function rowH(o){return '<div class="row"><div><span class="rk">'+o.r+'</span></div><div class="nm">'+o.n+'</div><div class="dni">'+o.d+'</div><div class="gn">'+fmt(o.g)+'</div><div class="cj">'+fmt(o.c)+'</div></div>';}
 document.getElementById('c1').innerHTML=data.slice(0,15).map(rowH).join('');
