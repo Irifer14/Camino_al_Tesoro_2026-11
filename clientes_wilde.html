@@ -64,7 +64,7 @@
         <div style="display:block;width:fit-content;margin:8px 0 0 24px;border:1.5px solid rgba(230,184,75,.4);border-radius:999px;padding:5px 18px;font-family:'Montserrat';font-weight:600;font-size:15px;color:#E8C877;background:rgba(20,14,6,.5)">
           * M&aacute;ximo 50 cupones diarios
         </div>
-        <div style="margin-top:6px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 11/11 01:30 hs</div>
+        <div style="margin-top:6px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 11/11 01:45 hs</div>
       </div>
       <div style="display:flex;gap:14px;align-items:stretch;padding-bottom:4px">
         <div class="chip" style="min-width:300px">
@@ -98,7 +98,7 @@
 function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('mk').style.transform='scale('+s+')';}
 fit();addEventListener('resize',fit);
 (function(){var t0=Date.now();setInterval(function(){if(Date.now()-t0>=900000){location.replace(location.pathname+'?r='+Date.now());}},30000);})();
-var data=[{"r":1,"n":"SERGIO","d":"678","c":300},{"r":2,"n":"GLADYS","d":"282","c":232},{"r":3,"n":"GERALDINE","d":"325","c":150},{"r":4,"n":"WALTER","d":"794","c":150},{"r":5,"n":"CLAUDIO","d":"668","c":150},{"r":6,"n":"CLAUDIO RICARDO","d":"505","c":150},{"r":7,"n":"ANA VICENTA","d":"140","c":70},{"r":8,"n":"JORGE OMAR","d":"500","c":70},{"r":9,"n":"FLORENCIA LUCILA","d":"905","c":50},{"r":10,"n":"ADRIANA","d":"957","c":50},{"r":11,"n":"CRISTIAN  GENARO","d":"057","c":50},{"r":12,"n":"VICTOR","d":"768","c":30},{"r":13,"n":"LEONARDO","d":"146","c":10},{"r":14,"n":"VIVIANA","d":"969","c":9},{"r":15,"n":"MARIANA","d":"507","c":6}];
+var data=[{"r":1,"n":"SERGIO","d":"678","c":300},{"r":2,"n":"GLADYS","d":"282","c":232},{"r":3,"n":"WALTER","d":"794","c":150},{"r":4,"n":"GERALDINE","d":"325","c":150},{"r":5,"n":"CLAUDIO","d":"668","c":150},{"r":6,"n":"CLAUDIO RICARDO","d":"505","c":150},{"r":7,"n":"ANA VICENTA","d":"140","c":70},{"r":8,"n":"JORGE OMAR","d":"500","c":70},{"r":9,"n":"FLORENCIA LUCILA","d":"905","c":50},{"r":10,"n":"ADRIANA","d":"957","c":50},{"r":11,"n":"CRISTIAN  GENARO","d":"057","c":50},{"r":12,"n":"VICTOR","d":"768","c":30},{"r":13,"n":"LEONARDO","d":"146","c":10},{"r":14,"n":"VIVIANA","d":"969","c":9},{"r":15,"n":"MARIANA","d":"507","c":6}];
 var fmt=function(x){return x.toLocaleString('es-AR');};
 function rowH(o){return '<div class="row"><div><span class="rk">'+o.r+'</span></div><div class="nm">'+o.n+'</div><div class="dni">'+o.d+'</div><div class="cj">'+fmt(o.c)+'</div></div>';}
 document.getElementById('c1').innerHTML=data.slice(0,15).map(rowH).join('');
