@@ -64,7 +64,7 @@
         <div style="display:block;width:fit-content;margin:8px 0 0 24px;border:1.5px solid rgba(230,184,75,.4);border-radius:999px;padding:5px 18px;font-family:'Montserrat';font-weight:600;font-size:15px;color:#E8C877;background:rgba(20,14,6,.5)">
           * M&aacute;ximo 50 cupones diarios
         </div>
-        <div style="margin-top:6px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 11/11 15:45 hs</div>
+        <div style="margin-top:6px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 11/11 16:00 hs</div>
       </div>
       <div style="display:flex;gap:14px;align-items:stretch;padding-bottom:4px">
         <div class="chip" style="min-width:300px">
@@ -98,7 +98,7 @@
 function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('mk').style.transform='scale('+s+')';}
 fit();addEventListener('resize',fit);
 (function(){var t0=Date.now();setInterval(function(){if(Date.now()-t0>=900000){location.replace(location.pathname+'?r='+Date.now());}},30000);})();
-var data=[{"r":1,"n":"MARIO","d":"311","c":479},{"r":2,"n":"GRACIELA","d":"559","c":192},{"r":3,"n":"MICAELA","d":"730","c":173},{"r":4,"n":"DAMIAN","d":"318","c":150},{"r":5,"n":"JESUS LUIS","d":"507","c":132},{"r":6,"n":"MARGARITA VIRGINIA","d":"065","c":130},{"r":7,"n":"MARCELO","d":"760","c":61},{"r":8,"n":"DANTE CLAUDIO","d":"661","c":50},{"r":9,"n":"CARLOS","d":"412","c":50},{"r":10,"n":"JUAN","d":"423","c":50},{"r":11,"n":"PATRICIA","d":"611","c":50},{"r":12,"n":"HILDA","d":"407","c":50},{"r":13,"n":"SANDRA","d":"932","c":50},{"r":14,"n":"ZULEMA","d":"269","c":50},{"r":15,"n":"EDUARDO","d":"553","c":50},{"r":16,"n":"RITA","d":"278","c":50},{"r":17,"n":"MARCOS","d":"635","c":23},{"r":18,"n":"CESAR","d":"861","c":10},{"r":19,"n":"ROMINA","d":"495","c":10},{"r":20,"n":"ANDRES","d":"605","c":10},{"r":21,"n":"ANA","d":"168","c":10},{"r":22,"n":"CARLOS FREDY","d":"681","c":6},{"r":23,"n":"JUAN LUIS","d":"917","c":5}];
+var data=[{"r":1,"n":"MARIO","d":"311","c":479},{"r":2,"n":"GRACIELA","d":"559","c":192},{"r":3,"n":"MICAELA","d":"730","c":173},{"r":4,"n":"DAMIAN","d":"318","c":150},{"r":5,"n":"JESUS LUIS","d":"507","c":132},{"r":6,"n":"MARGARITA VIRGINIA","d":"065","c":130},{"r":7,"n":"MARCELO","d":"760","c":61},{"r":8,"n":"DANTE CLAUDIO","d":"661","c":50},{"r":9,"n":"CARLOS","d":"412","c":50},{"r":10,"n":"JUAN","d":"423","c":50},{"r":11,"n":"PATRICIA","d":"611","c":50},{"r":12,"n":"SANDRA","d":"932","c":50},{"r":13,"n":"HILDA","d":"407","c":50},{"r":14,"n":"ZULEMA","d":"269","c":50},{"r":15,"n":"EDUARDO","d":"553","c":50},{"r":16,"n":"RITA","d":"278","c":50},{"r":17,"n":"MARCOS","d":"635","c":23},{"r":18,"n":"CESAR","d":"861","c":10},{"r":19,"n":"ROMINA","d":"495","c":10},{"r":20,"n":"ANDRES","d":"605","c":10},{"r":21,"n":"ANA","d":"168","c":10},{"r":22,"n":"CARLOS FREDY","d":"681","c":6},{"r":23,"n":"JUAN LUIS","d":"917","c":5}];
 var fmt=function(x){return x.toLocaleString('es-AR');};
 function rowH(o){return '<div class="row"><div><span class="rk">'+o.r+'</span></div><div class="nm">'+o.n+'</div><div class="dni">'+o.d+'</div><div class="cj">'+fmt(o.c)+'</div></div>';}
 document.getElementById('c1').innerHTML=data.slice(0,15).map(rowH).join('');
