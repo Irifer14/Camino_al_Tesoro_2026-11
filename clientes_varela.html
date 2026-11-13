@@ -43,8 +43,8 @@
       <div style="display:flex;align-items:center;gap:20px">
         <div style="font-family:'Montserrat';font-weight:800;font-size:16px;letter-spacing:2px" class="gold">Solo Slots &middot; Platino y Crystal &middot; Especial y VIP</div>
         <div style="display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.05);border:1px solid rgba(230,184,75,.3);padding:6px 15px;border-radius:999px">
-          <div style="width:9px;height:9px;border-radius:50%;background:#8A8A8A;animation:pulseDot 1.4s infinite"></div>
-          <div style="font-family:'Montserrat';font-weight:700;font-size:13px;letter-spacing:1.5px">FINALIZADO</div>
+          <div style="width:9px;height:9px;border-radius:50%;background:#e33;animation:pulseDot 1.4s infinite"></div>
+          <div style="font-family:'Montserrat';font-weight:700;font-size:13px;letter-spacing:1.5px">EN VIVO</div>
         </div>
         <div style="text-align:right;font-family:'Montserrat';line-height:1.05;padding-left:16px;border-left:1px solid rgba(230,184,75,.25)">
           <div style="font-size:9px;letter-spacing:2px;color:#B79256">SALA</div>
@@ -64,17 +64,17 @@
         <div style="display:block;width:fit-content;margin:8px 0 0 24px;border:1.5px solid rgba(230,184,75,.4);border-radius:999px;padding:5px 18px;font-family:'Montserrat';font-weight:600;font-size:15px;color:#E8C877;background:rgba(20,14,6,.5)">
           * M&aacute;ximo 50 cupones diarios
         </div>
-        <div style="margin-top:6px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 13/11 06:45 hs</div>
+        <div style="margin-top:6px;font-size:13px;font-weight:500;color:#9C7C3A">Se actualiza cada 15 minutos &middot; 13/11 07:00 hs</div>
       </div>
       <div style="display:flex;gap:14px;align-items:stretch;padding-bottom:4px">
         <div class="chip" style="min-width:300px">
           <div style="font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:2px;color:#E8C877">PREMIO DEL SORTEO</div>
-          <div style="font-family:'Montserrat';font-weight:900;font-size:40px;line-height:1;margin-top:2px" class="gold">$800.000</div>
+          <div style="font-family:'Montserrat';font-weight:900;font-size:40px;line-height:1;margin-top:2px" class="gold">$1.000.000</div>
           <div style="font-weight:600;font-size:12px;letter-spacing:1px;color:#C7A253;margin-top:2px">EN CRÉDITOS PROMOCIONALES</div>
         </div>
         <div class="chip" style="min-width:250px;display:flex;flex-direction:column;justify-content:center">
-          <div style="font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:2px;color:#E8C877">FASE 1 &middot; CANJE HASTA</div>
-          <div style="font-family:'Montserrat';font-weight:900;font-size:30px;margin-top:2px;color:#fff">12/11 &middot; 20:00 HS</div>
+          <div style="font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:2px;color:#E8C877">FASE 2 &middot; CANJE HASTA</div>
+          <div style="font-family:'Montserrat';font-weight:900;font-size:30px;margin-top:2px;color:#fff">25/11 &middot; 20:00 HS</div>
         </div>
       </div>
     </div>
@@ -98,7 +98,7 @@
 function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('mk').style.transform='scale('+s+')';}
 fit();addEventListener('resize',fit);
 (function(){var t0=Date.now();setInterval(function(){if(Date.now()-t0>=900000){location.replace(location.pathname+'?r='+Date.now());}},30000);})();
-var data=[{"r":1,"n":"MARIO","d":"311","c":529},{"r":2,"n":"GRACIELA","d":"559","c":192},{"r":3,"n":"MICAELA","d":"730","c":173},{"r":4,"n":"DAMIAN","d":"318","c":150},{"r":5,"n":"SANDRA","d":"932","c":150},{"r":6,"n":"JESUS LUIS","d":"507","c":132},{"r":7,"n":"MARGARITA VIRGINIA","d":"065","c":130},{"r":8,"n":"MARCELO","d":"760","c":111},{"r":9,"n":"ROMINA","d":"495","c":60},{"r":10,"n":"DANTE CLAUDIO","d":"661","c":50},{"r":11,"n":"JUANA","d":"189","c":50},{"r":12,"n":"CARLOS","d":"412","c":50},{"r":13,"n":"JUAN","d":"423","c":50},{"r":14,"n":"PATRICIA","d":"611","c":50},{"r":15,"n":"HILDA","d":"407","c":50},{"r":16,"n":"ZULEMA","d":"269","c":50},{"r":17,"n":"NORA","d":"495","c":50},{"r":18,"n":"EDUARDO","d":"553","c":50},{"r":19,"n":"RITA","d":"278","c":50},{"r":20,"n":"ESTELA","d":"932","c":50},{"r":21,"n":"MARCOS","d":"635","c":23},{"r":22,"n":"SUSANA","d":"068","c":20},{"r":23,"n":"CESAR","d":"861","c":10},{"r":24,"n":"ANDRES","d":"605","c":10},{"r":25,"n":"ANA","d":"168","c":10},{"r":26,"n":"CARLOS FREDY","d":"681","c":6},{"r":27,"n":"JUAN LUIS","d":"917","c":5}];
+var data=[];
 var fmt=function(x){return x.toLocaleString('es-AR');};
 function rowH(o){return '<div class="row"><div><span class="rk">'+o.r+'</span></div><div class="nm">'+o.n+'</div><div class="dni">'+o.d+'</div><div class="cj">'+fmt(o.c)+'</div></div>';}
 document.getElementById('c1').innerHTML=data.slice(0,15).map(rowH).join('');
